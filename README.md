@@ -11,6 +11,10 @@ boilerplate code for different file types.
 - Handles cursor placement via a `#cursor row:col` directive, placing your
   cursor right where you want it to be, so you can start coding immediately.
 
+## Demo
+
+![demo gif](./gh-assets/demo.gif)
+
 ## Installation
 
 ### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
