@@ -7,7 +7,9 @@ boilerplate code for different file types.
 ## Features
 
 - Automatically inserts templates for empty buffers based on file extension.
-- Supports custom templates, or default templates pulled from a repository.
+- Supports custom templates, or default templates .
+  - Supports sharing templates from custom repositories, or pull them from the
+    [default repository](https://github.com/codevogel/hatch.nvim-templates)
 - Handles cursor placement via a `#cursor row:col` directive, placing your
   cursor right where you want it to be, so you can start coding immediately.
 
