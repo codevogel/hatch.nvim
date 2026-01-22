@@ -45,12 +45,12 @@ end
 ---@param file_extension string
 ---@return string|nil
 local function get_template_file(cfg, file_extension)
-	local custom_template_file = cfg.custom_directory .. "/" .. file_extension
+	local custom_template_file = cfg.custom_directory .. "/template." .. file_extension
 	if file_exists(custom_template_file) then
 		return custom_template_file
 	end
 
-	local default_template_file = cfg.default_directory .. "/" .. file_extension
+	local default_template_file = cfg.default_directory .. "/template." .. file_extension
 	if file_exists(default_template_file) then
 		return default_template_file
 	end
