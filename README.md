@@ -31,8 +31,8 @@ boilerplate code for different file types.
 
 ```
 
-Now optionally run `:HatchCloneTemplates` to clone the default template
-repository.
+Now optionally run `:HatchCloneTemplates` to clone the [default template
+repository](https://github.com/codevogel/hatch.nvim-templates).
 
 ## Usage
 
