@@ -56,7 +56,7 @@ On the first line of a template file, you can add a cursor directive using
 `#cursor: row:col`. This makes it easy to get your cursor to the exact place you
 start writing code after hatching the template.
 
-e.g.: editing the `nix` template file, add `#cursor: 4:1` to make your cursor
+e.g.: editing the `template.nix` file, add `#cursor: 4:1` to make your cursor
 jump to line 4 (1-indexed), column 2 (0-indexed).
 
 > To make this process easy, just add the `#cursor` line, then place your cursor
@@ -77,8 +77,8 @@ set `template_directory` to that path.
 
 ### Example: Adding a template for .gd (gdscript) files
 
-Create a file `{template_directory}/default/gd` or
-`{template_directory}/custom/gd`:
+Create a file `{template_directory}/default/template.gd` or
+`{template_directory}/custom/template.gd`:
 
 ```gdscript
 #cursor 1:11
@@ -142,10 +142,10 @@ These settings can be supplied to the `setup` function of the plugin in a table.
 ```
 ~/.config/hatch.nvim/templates/
 ├── default/     # Default templates from the repo
-│   ├── py       # Python template
-│   └── lua      # Lua template
+│   ├── template.py       # Python template
+│   └── template.lua      # Lua template
 └── custom/      # User-defined custom templates
-    └── js       # JavaScript template
+    └── template.js       # JavaScript template
 ```
 
 - **Custom templates** override default templates when both exist.
