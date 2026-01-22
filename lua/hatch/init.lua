@@ -152,6 +152,13 @@ function M.setup(opts)
 		clone_templates(M.cfg)
 	end, {})
 
+	vim.api.nvim_create_user_command("Hatch", function()
+		M.hatch()
+		apply_cursor()
+	end, {})
+
+
+
 	vim.api.nvim_create_user_command("HatchForce", function()
 		M.force_hatch()
 	end, {})

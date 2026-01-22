@@ -1,7 +1,7 @@
 # Hatch.nvim
 
-🥚 **Hatch.nvim** is a Neovim plugin that automatically applies file templates to
-empty buffers. This plugin helps you start coding faster with pre-defined
+🥚 **Hatch.nvim** is a Neovim plugin that automatically applies file templates
+to empty buffers. This plugin helps you start coding faster with pre-defined
 boilerplate code for different file types.
 
 ## Features
@@ -13,7 +13,7 @@ boilerplate code for different file types.
 
 ## Demo
 
-![demo gif](./gh-assets/demo.gif)
+![demo gif](./demo/demo.gif)
 
 ## Installation
 
@@ -34,10 +34,9 @@ repository.
 
 ## Usage
 
-- Run `:lua require("hatch").hatch()` to hatch from a template file when in an
-  empty buffer.
-  - This is done automatically on `BufWritePre` when saving buffers when
-    `create_autocmd = true`.
+- Run `:Hatch` to hatch from a template file when in an empty buffer.
+  - ℹ️ This is done automatically on `BufWritePre` when saving buffers when
+    `create_autocmd = true` (on by default).
 - Template files are selected based on file extension from the
   `template_directory` (default: `$HOME/.config/hatch.nvim/templates`)
 - Templates can also be forced to overwrite a non-empty buffer using
@@ -130,10 +129,11 @@ These settings can be supplied to the `setup` function of the plugin in a table.
 
 ## Commands
 
-| Command                | Description                                                               |
-| ---------------------- | ------------------------------------------------------------------------- |
-| `:HatchCloneTemplates` | Clone the template repository into your local template directory.         |
-| `:HatchForce`          | Force-apply the template to the current buffer, overwriting its contents. |
+| Command                | Description                                                                |
+| ---------------------- | -------------------------------------------------------------------------- |
+| `:Hatch`               | Apply a template to the current buffer, overwriting its contents if empty. |
+| `:HatchForce`          | Force-apply the template to the current buffer, overwriting its contents.  |
+| `:HatchCloneTemplates` | Clone the template repository into your local template directory.          |
 
 ## Template Directory Structure
 
